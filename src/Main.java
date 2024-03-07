@@ -40,7 +40,37 @@ public class Main {
         // e2.takePicture(); doesnt work anymore
 
         ((Camera)e2).takePicture();
+CodingLanguage lang1 = new CodingLanguage();
+CodingLanguage lang2 = new Java();
+Java lang3 = new Java();
 
+ArrayList<CodingLanguage> listOfLang = new ArrayList<>();
+
+listOfLang.add(lang1);
+listOfLang.add(lang2);
+listOfLang.add(lang3);
+
+lang1.display();
+ lang2.display();
+ lang3.display();
+        
+for (CodingLanguage a : listOfLang){
+     a.display();
+}
+}
+class CodingLanguage{
+    public void display(){
+        System.out.println("this is a coding language");
+    }
+}
+
+class Java extends CodingLanguage {
+    @Override
+    public void display() {
+        System.out.println("This is java");
+    }
+    public void beTough(){
+        System.out.println("be tough");
     }
 }
 class Electronics{
